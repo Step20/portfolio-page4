@@ -1,0 +1,105 @@
+$blue: #55d9be;
+$white: #ccd6f6;
+$grey: #8892b0;
+$bg: #0a192f;
+$p: #7d87a4;
+
+.about-out {
+  width: 100%;
+  background-color: $bg;
+  .about-group {
+    background-color: $bg;
+    display: table;
+    height: 100vh;
+    width: 75%;
+    .about-content {
+      display: table-cell;
+      vertical-align: middle;
+      .about-body {
+        width: 70%;
+        .about-title {
+          animation: fadeInUp;
+          animation-duration: 1900ms;
+          display: inline;
+          h1 {
+            font-size: calc(1.5rem + 1.5vw);
+            display: inline;
+            color: $white;
+            font-weight: 900;
+            .ibm-font {
+              font-size: calc(1.2rem + 1.2vw);
+              color: $blue;
+              font-weight: 100;
+            }
+          }
+          .title-dash {
+            width: 100%;
+            height: 1px;
+            position: relative;
+            margin-top: (calc(-1rem + -0.6vw));
+            background: rgba(255, 255, 255, 0.108);
+          }
+        }
+        p {
+          font-size: calc(0.8rem + 0.85vw);
+          font-weight: 300;
+          line-height: 208%;
+          color: $p;
+          animation: fadeInUp;
+          animation-duration: 2100ms;
+          .p-bold {
+            color: $blue;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .about-out {
+    width: 100%;
+    background-color: $bg;
+    .about-group {
+      background-color: $bg;
+      display: table;
+      height: 100vh;
+      width: 75%;
+      .about-content {
+        display: table-cell;
+        vertical-align: middle;
+        .about-body {
+          width: 90%;
+          .about-title {
+            display: inline;
+            h1 {
+              font-size: calc(1.4rem + 1.4vw);
+              display: inline;
+              color: $white;
+              font-weight: 900;
+              .ibm-font {
+                font-size: calc(1.2rem + 1.2vw);
+                color: $blue;
+                font-weight: 100;
+              }
+            }
+            .title-dash {
+              display: none;
+            }
+          }
+          p {
+            font-size: calc(0.8rem + 0.85vw);
+            font-weight: 300;
+            line-height: 208%;
+            color: $p;
+            .p-bold {
+              color: $blue;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+@import "nav";
+@import "home";
+@import "about";
+@import "skills";
+@import "projects";
+@import "contact";
+@import "footer";
+@import "over";
+@import "over2";
+
+$blue: #55d9be;
+$white: #ccd6f6;
+$grey: #8892b0;
+$bg: #0a192f;
+$bg-grad: linear-gradient(180deg, #242424 0%, #171616 100%);
+
+.loading-out {
+  background: $bg;
+  height: 100vh;
+  .loading {
+    display: table;
+    background: $bg;
+    .loading-c {
+      background: $bg;
+      color: white;
+      text-align: center;
+      vertical-align: middle;
+      height: 90vh;
+      width: 100vw;
+      margin: 0 !important;
+      display: table-cell;
+      vertical-align: middle;
+      transition: all 0.3s ease;
+      img {
+        animation: zoomOut;
+        animation-duration: 1s;
+        animation-delay: 1500ms;
+        height: calc(3rem + 3vw);
+        width: calc(2.7rem + 2.7vw);
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+
+body {
+  height: 100vh;
+  background-color: $bg;
+}
+* {
+  scroll-behavior: smooth;
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $bg;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #8892b046;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    transition: all 0.3s ease;
+    background: $white;
+  }
+
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  .ibm-font {
+    font-family: "IBM Plex Mono";
+  }
+}

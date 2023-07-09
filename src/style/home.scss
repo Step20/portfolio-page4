@@ -1,0 +1,82 @@
+$blue: #55d9be;
+$white: #ccd6f6;
+$grey: #8892b0;
+$bg: #0a192f;
+.home-out {
+  z-index: 10;
+  width: 100%;
+  background-color: $bg;
+  .scroll {
+    transition: all 0.3s ease;
+    color: $bg;
+    width: 70px;
+    height: 70px;
+    background-color: $white;
+    border-radius: 0px;
+    box-shadow: 0 rgba(0, 0, 0, 0);
+    &:hover {
+      transition: all 0.3s ease;
+      color: $bg;
+      transform: translate(0, -5px);
+      background-color: $blue;
+      border-radius: 0px;
+      box-shadow: 1 rgb(85, 217, 190);
+    }
+  }
+  .home-group {
+    display: table;
+    height: 100vh;
+
+    .home-content {
+      width: 75%;
+
+      display: table-cell;
+      vertical-align: middle;
+
+      p {
+        color: $blue;
+        font-size: calc(0.6rem + 0.6vw);
+        animation: fadeInUp;
+        animation-duration: 1s;
+      }
+      h1 {
+        color: $white;
+        font-weight: 900;
+        font-size: calc(2.6rem + 2.6vw);
+        margin-bottom: 0;
+        animation: fadeInUp;
+        animation-duration: 2s;
+      }
+      h2 {
+        color: $grey;
+        font-weight: 600;
+        font-size: calc(1.6rem + 2.6vw);
+        margin-bottom: 3vw;
+        animation: fadeInUp;
+        animation-duration: 3s;
+      }
+      .home-btn {
+        font-family: "IBM Plex Mono";
+        color: $blue;
+        font-size: calc(0.65rem + 0.65vw);
+        margin-right: 1.5vw;
+        border: 2px solid #55d9be;
+        border-radius: 0px;
+        padding: 0.7vw 3.3vw 0.7vw 3.3vw;
+        background-color: rgba(0, 0, 0, 0);
+        transition: all 0.3s ease;
+        animation: fadeInUp;
+        animation-duration: 4s;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $blue;
+          color: $bg;
+          font-weight: bold;
+          transition: all 0.5s ease;
+          transform: translate(0, -10px);
+        }
+      }
+    }
+  }
+}

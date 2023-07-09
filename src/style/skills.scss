@@ -1,0 +1,146 @@
+$blue: #55d9be;
+$white: #ccd6f6;
+$grey: #8892b0;
+$bg: #0a192f;
+$p: #7d87a4;
+$card: #112240;
+
+.skills-out {
+  width: 100%;
+  background-color: $bg;
+  .skills-group {
+    background-color: $bg;
+    display: table;
+    height: 100vh;
+    width: 75%;
+    .skills-content {
+      display: table-cell;
+      vertical-align: middle;
+      .skills-body {
+        width: 70%;
+        .skills-title {
+          display: inline;
+          h1 {
+            font-size: calc(1.5rem + 1.5vw);
+            display: inline;
+            color: $white;
+            font-weight: 900;
+            .ibm-font {
+              font-size: calc(1.2rem + 1.2vw);
+              color: $blue;
+              font-weight: 100;
+            }
+          }
+          .title-dash {
+            width: 100%;
+            height: 1px;
+            position: relative;
+            margin-top: (calc(-1rem + -0.6vw));
+            background: rgba(255, 255, 255, 0.108);
+          }
+        }
+        .skills-cards {
+          .card {
+            transition: all 0.35s ease;
+            background-color: $card;
+            &:hover {
+              transition: all 0.35s ease;
+              background-color: #132749;
+              cursor: pointer;
+              transform: translate(0, -10px);
+            }
+            .card-content {
+              width: 90%;
+              padding: 1vw;
+              vertical-align: middle;
+              .card-icon {
+                color: $blue;
+                stroke: 1px;
+                font-size: (calc(3rem + 3vw));
+              }
+              h4 {
+                color: $white;
+                font-size: (calc(1rem + 0.7vw));
+                font-weight: 600;
+              }
+              p {
+                color: $grey;
+                font-size: (calc(0.3rem + 0.5vw));
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .skills-out {
+    width: 100%;
+    background-color: $bg;
+    .skills-group {
+      background-color: $bg;
+      display: table;
+      height: 100vh;
+      width: 75%;
+      .skills-content {
+        display: table-cell;
+        vertical-align: middle;
+        .skills-body {
+          width: 90%;
+          .skills-title {
+            display: inline;
+            h1 {
+              font-size: calc(1.4rem + 1.4vw);
+              display: inline;
+              color: $white;
+              font-weight: 900;
+              .ibm-font {
+                font-size: calc(1.2rem + 1.2vw);
+                color: $blue;
+                font-weight: 100;
+              }
+            }
+            .title-dash {
+              display: none;
+            }
+          }
+          .skills-cards {
+            .card {
+              transition: all 0.35s ease;
+              background-color: $card;
+              &:hover {
+                transition: all 0.35s ease;
+                background-color: #132749;
+                cursor: pointer;
+                transform: translate(0, -10px);
+              }
+              .card-content {
+                width: 90%;
+                padding: 1vw;
+                vertical-align: middle;
+                .card-icon {
+                  color: $blue;
+                  stroke: 1px;
+                  font-size: (calc(2.6rem + 2.6vw));
+                }
+                h4 {
+                  color: $white;
+                  font-size: (calc(0.8rem + 0.4vw));
+                  font-weight: 600;
+                }
+                p {
+                  color: $grey;
+                  font-size: (calc(0.5rem + 0.5vw));
+                  font-weight: 300;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
