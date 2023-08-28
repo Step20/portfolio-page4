@@ -109,7 +109,7 @@ export const NavPage = () => {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <a href="/images/myw3schoolsimage.jpg" download="w3logo">
+                <a href="resume/Resume.pdf" target="_blank">
                   <Button className="nav-btn ibm-font n-5 animate__animated  animate__fadeIn n-5">
                     Resume
                   </Button>
