@@ -11,8 +11,9 @@ import {
 } from "reactstrap";
 import { fadeInUp, fadeInDown, fadeIn } from "react-animations";
 import { Link } from "react-scroll";
+import { HashLink } from "react-router-hash-link";
 import navlogo from "../assets/nav-brand.png";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 export const NavPage = () => {
   const [isOpen, setIsOpen] = useState(false);

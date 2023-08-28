@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from "reactstrap";
 import { AiOutlineGithub } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineLinkedin } from "react-icons/ai";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 export const Footer = () => {
   return (

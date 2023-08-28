@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import { PROJECT_DATA } from "../shared/project";
 import Tilt from "react-vanilla-tilt";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 export const Projects = () => {
   return (
@@ -49,9 +49,12 @@ export const Projects = () => {
                               <h4>{project.tag2}</h4>
                               <h4>{project.tag3}</h4>
                             </div>
-                            <p href={project.gitUrl}>GitHub</p>
-                            <p href={project.liveUrl}>Live Site</p>
-                            <p href={project.uiUrl}>UI Design</p>
+                            <a href={project.gitUrl} target="_blank">
+                              <p>GitHub</p>
+                            </a>{" "}
+                            <a href={project.liveUrl} target="_blank">
+                              <p>Live Site</p>
+                            </a>
                           </div>
                         </div>
                       </Tilt>

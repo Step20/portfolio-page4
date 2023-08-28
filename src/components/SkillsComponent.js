@@ -7,7 +7,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import { DiReact } from "react-icons/di";
 import { FaBootstrap } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 import Tilt from "react-vanilla-tilt";
 
 export const Skills = () => {

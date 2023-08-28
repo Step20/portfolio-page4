@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 import { fadeInUp, fadeInDown, fadeIn } from "react-animations";
 import ScrollToTop from "react-scroll-to-top";
 import { Link } from "react-scroll";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 export const Home = () => {
   return (
