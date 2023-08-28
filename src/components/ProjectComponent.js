@@ -55,6 +55,9 @@ export const Projects = () => {
                             <a href={project.liveUrl} target="_blank">
                               <p>Live Site</p>
                             </a>
+                            <a href={project.uiUrl} target="_blank">
+                              <p>UI</p>
+                            </a>
                           </div>
                         </div>
                       </Tilt>
