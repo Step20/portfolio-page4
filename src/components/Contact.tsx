@@ -38,13 +38,6 @@ const contactItems = [
     href: "https://github.com/Step20",
     color: "#94a3b8",
   },
-  {
-    icon: FiLink,
-    label: "Bizly",
-    value: "getbizly.app",
-    href: "https://getbizly.app/",
-    color: "#34d399",
-  },
 ];
 
 export default function Contact() {

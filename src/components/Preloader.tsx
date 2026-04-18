@@ -42,7 +42,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
       <motion.div
         animate={{ scale: [1, 1.18, 1], opacity: [0.35, 0.6, 0.35] }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 rounded-full pointer-events-none"
         style={{
           background:
             "radial-gradient(circle, rgba(99,102,241,0.18) 0%, transparent 65%)",
@@ -50,7 +50,12 @@ export default function Preloader({ onComplete }: PreloaderProps) {
       />
       <motion.div
         animate={{ scale: [1.1, 1.3, 1.1], opacity: [0.2, 0.4, 0.2] }}
-        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+        transition={{
+          duration: 7,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 1,
+        }}
         className="absolute top-1/4 left-1/3 w-80 h-80 rounded-full pointer-events-none"
         style={{
           background:
@@ -59,7 +64,12 @@ export default function Preloader({ onComplete }: PreloaderProps) {
       />
       <motion.div
         animate={{ scale: [1, 1.25, 1], opacity: [0.12, 0.28, 0.12] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2.5 }}
+        transition={{
+          duration: 6,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 2.5,
+        }}
         className="absolute bottom-1/4 right-1/4 w-72 h-72 rounded-full pointer-events-none"
         style={{
           background:
@@ -90,7 +100,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
-            className="absolute -inset-[5px] rounded-[28px]"
+            className="absolute -inset-1.25 rounded-[28px]"
             style={{
               background:
                 "conic-gradient(from 0deg, transparent 0%, #6366f1 25%, #a78bfa 50%, transparent 75%)",
@@ -99,7 +109,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
           />
           {/* Inner mask */}
           <div
-            className="absolute -inset-[3px] rounded-[26px]"
+            className="absolute -inset-0.75 rounded-[26px]"
             style={{ background: "#080810" }}
           />
 
@@ -107,7 +117,11 @@ export default function Preloader({ onComplete }: PreloaderProps) {
           <motion.div
             initial={{ scale: 0.5, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.65, delay: 0.1, ease: [0.34, 1.56, 0.64, 1] }}
+            transition={{
+              duration: 0.65,
+              delay: 0.1,
+              ease: [0.34, 1.56, 0.64, 1],
+            }}
             className="relative w-24 h-24 rounded-2xl overflow-hidden"
             style={{
               boxShadow:
@@ -117,7 +131,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
             <img
               src={arLogo}
               alt="Armand Robinson"
-              className="w-full h-full object-cover"
+              className="w-full h-full p-1 object-contain"
             />
           </motion.div>
         </div>
@@ -164,7 +178,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
         >
           {/* Glowing progress bar */}
           <div
-            className="w-full h-[2px] rounded-full overflow-hidden relative"
+            className="w-full h-0.5 rounded-full overflow-hidden relative"
             style={{ background: "rgba(255,255,255,0.05)" }}
           >
             <motion.div

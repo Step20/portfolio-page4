@@ -83,7 +83,7 @@ export default function Nav() {
               <button
                 key={link}
                 onClick={() => scrollTo(link)}
-                className="text-sm transition-colors duration-200 focus:outline-none"
+                className="text-sm cursor-pointer transition-colors duration-200 focus:outline-none"
                 style={{
                   color:
                     activeSection === link.toLowerCase()
@@ -99,7 +99,7 @@ export default function Nav() {
               href="mailto:armand.robinson20@gmail.com"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              className="px-4 py-2 rounded-lg text-white text-sm font-medium transition-opacity hover:opacity-85"
+              className="px-4 py-2 cursor-pointer rounded-lg text-white text-sm font-medium transition-opacity hover:opacity-85"
               style={{
                 background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
               }}
