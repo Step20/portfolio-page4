@@ -54,7 +54,7 @@ export default function About() {
             style={{ color: "#64748b" }}
           >
             <p>
-              I'm a Software Engineer based in Miami, FL, currently working at{" "}
+              I'm a Software Engineer based in Orlando, FL, currently working at{" "}
               <span style={{ color: "#818cf8" }} className="font-medium">
                 Jack Henry &amp; Associates
               </span>
