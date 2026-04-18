@@ -6,7 +6,6 @@ import {
   FiGithub,
   FiLinkedin,
   FiArrowRight,
-  FiLink,
 } from "react-icons/fi";
 
 const contactItems = [
