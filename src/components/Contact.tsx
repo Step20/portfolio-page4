@@ -93,7 +93,7 @@ export default function Contact() {
               key={label}
               href={href}
               target={href.startsWith("http") ? "_blank" : undefined}
-              rel="noopener noreferrer"
+              rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
               initial={{ opacity: 0, y: 18 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2 + i * 0.08 }}
