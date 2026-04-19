@@ -5,7 +5,7 @@ const experiences = [
   {
     company: "Jack Henry & Associates",
     role: "Software Engineer",
-    period: "March 2026 – Present",
+    period: "March 2026",
     location: "Remote",
     current: true,
     bullets: [
