@@ -127,7 +127,7 @@ export default function Experience() {
                               border: "1px solid rgba(99,102,241,0.3)",
                             }}
                           >
-                            Current
+                            Most Recent
                           </span>
                         )}
                       </div>
