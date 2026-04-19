@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 const stats = [
   { value: "2+", label: "Years Experience" },
   { value: "3+", label: "AI Products Built" },
-  { value: "Jack Henry", label: "Current Employer" },
+  { value: "Jack Henry", label: "Previous Employer" },
   { value: "B.S. CS", label: "Florida Int'l Univ." },
 ];
 
@@ -54,11 +54,12 @@ export default function About() {
             style={{ color: "#64748b" }}
           >
             <p>
-              I'm a Software Engineer based in Orlando, FL, currently working at{" "}
+              I'm a Software Engineer based in Orlando, FL, previously working
+              at{" "}
               <span style={{ color: "#818cf8" }} className="font-medium">
                 Jack Henry &amp; Associates
               </span>
-              , where I build fintech solutions and AI-powered features for
+              , where I built fintech solutions and AI-powered features for
               banking customers.
             </p>
             <p>
